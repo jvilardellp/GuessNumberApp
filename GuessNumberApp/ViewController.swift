@@ -6,6 +6,8 @@
 //  Copyright © 2020 jvp. All rights reserved.
 //
 
+// Add text to check out that the modifications are displayed using the version viewer.
+
 import UIKit
 
 class ViewController: UIViewController {
