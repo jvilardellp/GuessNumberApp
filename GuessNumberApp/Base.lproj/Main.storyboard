@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessNumberApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GUESS THE NUMBER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnH-mH-sNw">
+                                <rect key="frame" x="10" y="54" width="394" height="49.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gnH-mH-sNw" secondAttribute="height" multiplier="278:35" id="PVZ-X1-JKD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNE-xS-pFI">
+                                <rect key="frame" x="10" y="143.66666666666666" width="394" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attempts:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqZ-Ji-pEV">
+                                <rect key="frame" x="20" y="227.66666666666666" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pod-FN-GL6">
+                                <rect key="frame" x="383" y="227.66666666666666" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the number from 0 - 9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRT-As-YF6">
+                                <rect key="frame" x="20" y="267.66666666666669" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjT-CB-JtM">
+                                <rect key="frame" x="30" y="338.66666666666669" width="354" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="VALIDATE"/>
+                                <connections>
+                                    <action selector="validateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T67-GV-fJB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VNE-xS-pFI" firstAttribute="top" secondItem="gnH-mH-sNw" secondAttribute="bottom" constant="40" id="19G-kd-3km"/>
+                            <constraint firstItem="lqZ-Ji-pEV" firstAttribute="top" secondItem="VNE-xS-pFI" secondAttribute="bottom" constant="40" id="2Yo-Cy-IQp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VNE-xS-pFI" secondAttribute="trailing" constant="10" id="4gd-OM-KWV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pod-FN-GL6" secondAttribute="trailing" constant="20" id="5eQ-ZV-Sq4"/>
+                            <constraint firstItem="Pod-FN-GL6" firstAttribute="top" secondItem="VNE-xS-pFI" secondAttribute="bottom" constant="40" id="8Ft-gb-rAR"/>
+                            <constraint firstItem="gnH-mH-sNw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="8LZ-cE-Owo"/>
+                            <constraint firstItem="PjT-CB-JtM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Ldo-Kh-q3e"/>
+                            <constraint firstItem="VNE-xS-pFI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="NK8-RQ-0sD"/>
+                            <constraint firstItem="gnH-mH-sNw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="SHO-Rw-JdR"/>
+                            <constraint firstItem="lqZ-Ji-pEV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SSu-o8-NR3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nRT-As-YF6" secondAttribute="trailing" constant="20" id="T65-gd-vnw"/>
+                            <constraint firstItem="PjT-CB-JtM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WPa-5w-6nW"/>
+                            <constraint firstItem="gnH-mH-sNw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZND-bI-pJp"/>
+                            <constraint firstItem="VNE-xS-pFI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e2q-bQ-Zm4"/>
+                            <constraint firstItem="PjT-CB-JtM" firstAttribute="top" secondItem="nRT-As-YF6" secondAttribute="bottom" constant="50" id="eHT-lU-3jV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PjT-CB-JtM" secondAttribute="trailing" constant="30" id="fRo-OM-MdU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gnH-mH-sNw" secondAttribute="trailing" constant="10" id="gBe-xM-Wbd"/>
+                            <constraint firstItem="nRT-As-YF6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="l1V-hz-jWi"/>
+                            <constraint firstItem="nRT-As-YF6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sFw-LA-QeL"/>
+                            <constraint firstItem="nRT-As-YF6" firstAttribute="top" secondItem="VNE-xS-pFI" secondAttribute="bottom" constant="80" id="wRB-nH-nSt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageAttemptsLabel" destination="nRT-As-YF6" id="e3f-Lf-3cB"/>
+                        <outlet property="numberAttemptsLabel" destination="Pod-FN-GL6" id="jgE-mp-89V"/>
+                        <outlet property="numberTXT" destination="VNE-xS-pFI" id="ksj-fy-6nj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
