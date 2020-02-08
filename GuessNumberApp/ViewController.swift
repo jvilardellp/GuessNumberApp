@@ -24,14 +24,14 @@ class ViewController: UIViewController {
         // Task to do when the button is pressed
         if numberTXT.text == random {
             messageAttemptsLabel.text = "Congratulations! The number chosen is correct."
-            self.view.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+            self.view.backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
             
             showAlert()
         }
         else {
             messageAttemptsLabel.text = "Wrong number! Try again."
             if attempts == 1 {
-                self.view.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+                self.view.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
                 
                 showAlert()
             }
