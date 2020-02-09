@@ -26,14 +26,14 @@ class ViewController: UIViewController {
             messageAttemptsLabel.text = "Congratulations! The number chosen is correct."
             self.view.backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
             
-            showAlert()
+            showAlertCorrectNumber()
         }
         else {
             messageAttemptsLabel.text = "Wrong number! Try again."
             if attempts == 1 {
                 self.view.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
                 
-                showAlert()
+                showAlertWrongNumber()
             }
             else {
                 attempts -= 1
@@ -51,7 +51,16 @@ class ViewController: UIViewController {
         setValues() // Printing on console the random number
     }
     
-    func showAlert() {
+    func showAlertCorrectNumber() {
+        let alert = UIAlertController(title: nil, message: "You are the best!!!\n Game Over", preferredStyle: .alert)
+        let playAgain = UIAlertAction(title: "Play again!", style: .default) { (UIAlertAction) in self.setValues() }
+        
+        alert.addAction(playAgain)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    func showAlertWrongNumber() {
         let alert = UIAlertController(title: nil, message: "Game Over", preferredStyle: .alert)
         let playAgain = UIAlertAction(title: "Play again!", style: .default) { (UIAlertAction) in self.setValues() }
         
