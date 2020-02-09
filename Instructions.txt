@@ -1,0 +1,2 @@
+Instructions to play to the game Guess Number.
+Only is necesary to write number from 0 to 9 in the text field to push the button validate to check out the result.
