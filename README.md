@@ -6,7 +6,7 @@ My first IOS APP
 My first IOS APP
 
 # Screen shot
-![Screenshoot](https://raw.github.com/jvilardellp/GuessNumberApp/master/)
+![Screenshoot](https://raw.github.com/jvilardellp/GuessNumberApp/master/GuessNumberApp/Screenshot.png)
 
 
 # Author
